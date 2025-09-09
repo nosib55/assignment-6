@@ -15,4 +15,8 @@
 
 4) Destructuring assignment in ES6:
 - Array বা Object থেকে data আলাদা করে variable এ assign করার short way।
+5) Template literals in ES6:
+- Backticks (`) দিয়ে string লেখা হয়।
+- Multi-line string এবং variable embed করা যায় ${} দিয়ে।
+- Concatenation এর চাইতে clean এবং readable।
 
