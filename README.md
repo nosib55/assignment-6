@@ -8,3 +8,11 @@
 - forEach() → শুধু loop চালায়, কিছু return করে না।
 - filter() → condition true হলে elements নিয়ে নতুন array বানায়।
 
+3) Arrow functions in ES6:
+- Short syntax for function।
+- function keyword লাগে না।
+- this parent scope থেকে নেয়।
+
+4) Destructuring assignment in ES6:
+- Array বা Object থেকে data আলাদা করে variable এ assign করার short way।
+
