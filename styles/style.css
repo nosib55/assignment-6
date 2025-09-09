@@ -1,0 +1,15 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.button {
+  background-color: #f0fdf4;
+  width: 250px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #15803d;
+  color: white;
+}
