@@ -33,7 +33,7 @@
   </head>
   <body>
     <!-- Header and navbar -->
-    <header class="bg-green-700 top-0 z-50">
+    <header class="bg-green-700  top-0 z-50">
       <div class="navbar shadow-sm w-11/12 mx-auto">
         <div class="navbar-start">
           <div class="dropdown">
@@ -125,9 +125,8 @@
           <span class="loading loading-spinner text-success"></span>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-12 mt-10 gap-6">
-          <!-- Sidebar -->
-          <div class="md:col-span-2">
+        <div class="grid grid-cols-12 mt-10">
+          <div class="col-span-2">
             <h3 class="mb-4 text-xl font-bold text-center">Categories</h3>
             <button
               id="allTree-btn"
@@ -138,31 +137,27 @@
 
             <div
               id="category-container"
-              class="flex flex-col justify-center mt-4 space-y-2"
+              class="flex flex-col justify-center"
             ></div>
           </div>
 
-          <!-- Cards -->
-          <div class="md:col-span-8">
+          <div class="col-span-8">
             <div
               id="card-container"
-              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-4 gap-7"
+              class="grid grid-cols-1 md:grid-cols-3 p-4 gap-7"
             ></div>
           </div>
-
-          <!-- Cart -->
-          <div class="md:col-span-2 bg-white p-4 rounded-xl shadow-md">
+          <div class="col-span-2 bg-white p-4">
             <h3 class="text-xl font-bold">Your Cart</h3>
-            <div id="card-history" class="space-y-2 mt-3"></div>
-            <div class="flex justify-between items-center border-t pt-4 mt-4">
-              <h3 class="font-bold">Total Price:</h3>
-              <p id="total-price"> $<span>0</span></p>
-            </div>
+            <div id="card-history"></div>
+            <h3 id="total-price" class="font-bold mt-4 text-green-700 text-lg">
+              Total: $0
+            </h3>
           </div>
         </div>
       </section>
       <!-- About Campaign -->
-      <section class="w-11/12 md:w-6/12 mx-auto mt-24 justify-center">
+      <section class="w-6/12 mx-auto mt-24 justify-center">
         <h1 class="text-center text-3xl font-bold">About the Campaign</h1>
         <div class="flex flex-col md:flex-row items-center gap-7 mt-10">
           <div class="left-div flex-1 shadow-md">
@@ -184,7 +179,7 @@
         </div>
       </section>
       <!-- Our impact section -->
-      <section class="mt-24 bg-[#cff0dc] p-10 md:p-20">
+      <section class="mt-24 bg-[#cff0dc] p-20">
         <div class="w-11/12 mx-auto">
           <h1 class="text-center text-3xl font-bold">Our Impact</h1>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10">
@@ -210,18 +205,18 @@
         </div>
       </section>
       <!-- Form section -->
-      <section class="bg-green-900 p-10 md:p-20">
+      <section class="bg-green-900 p-20">
         <div>
           <h1 class="text-center text-white text-3xl font-bold mb-10">
             Plant a Tree Today
           </h1>
         </div>
         <div class="text-center flex justify-center items-center">
-          <form class="bg-green-800 p-4 md:p-10 space-y-2 rounded-xl w-full md:w-1/2">
+          <form class="bg-green-800 p-4 md:p-10 space-y-2 rounded-xl">
             <input type="text" placeholder="Your Name" class="input w-full" />
             <input
-              type="email"
-              placeholder="Your Email Address"
+              type="password"
+              placeholder="Your Emial Address"
               class="input w-full"
             />
             <input
@@ -249,12 +244,15 @@
       <h1>© 2025 Green Earth. All Rights Reserved.</h1>
     </footer>
 
-    <!-- Modal -->
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
     <dialog id="tree_modal" class="modal modal-bottom sm:modal-middle">
       <div class="modal-box">
         <div id="details-container" class=""></div>
+
         <div class="modal-action">
           <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
             <button class="btn">Close</button>
           </form>
         </div>
